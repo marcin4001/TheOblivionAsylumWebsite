@@ -1,0 +1,364 @@
+
+
+
+body{
+    font-family: 'Courier Prime', monospace;
+    font-size:15px;
+    line-height:1.5;
+    background-color: #1f1f1f;
+    font: 15px;
+    padding: 0;
+    margin:0;
+    color:white;
+}
+
+.button{
+
+    width: 115px;
+    height: 25px;
+    background: #840b0b;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight:bold;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 10px;
+
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+    justify-items: center;
+    
+}
+
+.item{
+    width: 100%;
+    overflow: hidden;
+    background: #555;
+}
+
+.item img{
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.item img:hover{
+    opacity: 1;
+    transform: scale(1.08);
+}
+.dashed{
+    border-top: 1px dashed white;
+    border-bottom: 1px dashed white;
+}
+#foter{
+    margin: 20px auto;
+    border-top: #cb0000 3px solid;
+    width: 100%;
+    height: 100%;
+    display: block;
+    float:left;
+    width: 100%;
+    padding: 00px 0px;
+    text-align: center;
+     margin:20px 0px;
+    min-height: 80px;
+
+}
+
+#foter p{
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+}
+#foter a{
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover{
+    background: #6f0b0b;
+}
+
+#social{
+    position: fixed;
+    left: 0px;
+    top: 240px;
+    width: 35px;
+    height: 113px;
+    padding: 5px;
+    background-color: rgba(56, 56, 56, 0.85);
+    border-radius: 0px 10px 10px 0px;
+    z-index: 1;
+}
+
+#titleSc{
+    text-align: center;
+    font-size: 20px;
+}
+
+#credits{
+    
+    width: 30%;
+    float: left;
+    margin-top: 10px
+}
+#credits h1{
+    text-align: center;
+}
+
+#credits img{
+    width: 100%;
+    text-align: center;
+}
+
+#buttons{
+    margin: 25px 40px 0px 40px;
+    float: right;
+    text-align: center;
+    font-size: 12px;
+}
+
+#info h1{
+    float:left;
+    margin: 20px 40px 0px 40px;
+    padding: 0;
+}
+
+#info{
+   border-bottom: #cb0000 3px solid;
+}
+
+#devlog{
+    display: inline-block;
+    float:left;
+    width: 60%;
+    padding: 10px;
+}
+
+#screen{
+    display: block;
+    float:left;
+    width: 30%;
+    padding: 00px 0px;
+    text-align: center;
+     margin:20px 0px;
+}
+
+#screen p{
+    text-align: left;
+    padding: 20px;
+}
+
+
+#screen li{
+    text-align: left;
+    font-size: 20px;
+    margin: auto;
+}
+
+#screen h1{
+    text-align: center;
+}
+
+#screen h3{
+    margin: auto;
+}
+
+#screen img{
+    width: 90%;
+    height: auto;
+}
+
+.container{
+    width: 80%;
+    margin:auto;
+    overflow:hidden;
+    
+}
+
+header{
+    background: #232526;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #cb0000 3px solid;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px;
+}
+
+
+header #branding{
+    float: left;
+    display: inline;
+    width: 60%
+}
+
+header #branding img{
+    float: left;
+    display: inline;
+    margin: 0px 12px;
+}
+
+header #branding h1{
+    margin: 0px;
+    padding: 0px 10px;
+    
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+#showcase{
+    
+    min-height: 400px;
+    background: url('../img/showcase.png') no-repeat 0;
+    border-bottom: #cb0000 3px solid;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    text-align: center;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+    max-height: 500px;
+    padding: 0 80px;
+    
+}
+
+#showcase p{
+    color: orangered;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #showcase h1 {
+    padding:  0;
+    margin-bottom: 20px;
+    position: relative;
+    }
+    #devlog{
+    float:left;
+    width: 100%;
+    padding: 0;
+    }
+    
+    #screen{
+    display: block;
+    float:left;
+    width: 100%;
+    }
+
+    header #branding img{
+    width: 40px;
+    float: left;
+    display: inline;}
+    
+    header #branding h1{
+    margin: 2px 0px;
+    }
+    #credits{
+    width: 100%;
+    
+}
+
+}
+
+@media only screen and (max-width: 900px) {
+  #showcase h1 {
+    margin-top: 70px;
+    font-size: 8vw;
+    padding:  0;
+    margin-bottom: 20px;
+    position: relative;
+    }
+    #devlog{
+    float:left;
+    width: 100%;
+    padding: 0;
+    }
+    
+    #screen{
+    display: block;
+    float:left;
+    width: 100%;
+    }
+    header #branding {
+    float: left;
+    display: inline;
+    width: 100%;
+    font-size: 13px
+    }
+    header #branding img{
+    width: 40px;
+    float: left;
+    display: inline;}
+    
+    header #branding h1{
+    margin: 2px 0px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+  #showcase h1 {
+    margin-top: 100px;
+  }
+    header #branding {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+header li{
+    padding: 0 10px;
+}
+    header #branding {
+    font-size: 11px;
+}
+.button{
+
+    width: 115px;
+    height: 25px;
+    background: #840b0b;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight:bold;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px 10px;
+
+}
+}
